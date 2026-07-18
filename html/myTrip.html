@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김상훈의 여행지</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>김상훈의 여행지</h1>
+    <p class="page-lead">서로 다른 분위기의 서울 야경과 겨울 산 풍경을 골랐습니다.</p>
+
+    <nav class="site-nav" aria-label="김상훈의 페이지 메뉴">
+      <h3>페이지 메뉴</h3>
+      <ul>
+        <li><a href="index.html">메인으로</a></li>
+        <li><a href="myProfile.html">내 소개</a></li>
+        <li><a href="mediaSources.html">자료 출처</a></li>
+      </ul>
+    </nav>
+
+    <section class="media-section">
+      <h2>여행 음악</h2>
+      <audio controls>
+        <source src="../media/beat-electronic.ogg" type="audio/ogg">
+        브라우저가 오디오 재생을 지원하지 않습니다.
+      </audio>
+      <p>사진을 보면서 들을 수 있도록 음악 파일을 넣었습니다.</p>
+    </section>
+
+    <h2>여행지 사진</h2>
+    <div class="trip-grid-container">
+      <p class="trip-card">
+        <img src="../media/seoul-by-night.jpg" width="400" height="240" alt="한강에 비치는 서울 야경">
+        <strong>서울 한강</strong><br>강물에 비친 건물 불빛이 인상적인 서울의 밤 풍경입니다.
+      </p>
+      <p class="trip-card">
+        <img src="../media/mountain-landscape.jpg" width="400" height="240" alt="눈이 쌓인 한국의 겨울 산">
+        <strong>겨울 산</strong><br>도시와는 다른 조용한 겨울 풍경을 함께 골랐습니다.
+      </p>
+    </div>
+
+    <section class="media-section">
+      <h2>짧은 비디오</h2>
+      <video width="560" height="315" controls poster="../media/seoul-by-night.jpg">
+        <source src="../media/study-workspace.mp4" type="video/mp4">
+        브라우저가 비디오 재생을 지원하지 않습니다.
+      </video>
+      <p>MP4 파일을 <code>video</code>와 <code>source</code>로 연결했습니다.</p>
+    </section>
+
+    <p class="source-note">사진·음악·영상의 원본과 사용 조건은 <a href="mediaSources.html">자료 출처</a>에서 확인할 수 있습니다.</p>
+    <footer class="site-footer"><p>김상훈의 SKALA 프론트엔드 과제</p></footer>
+  </div>
+  <script src="../script/site.js"></script>
+</body>
+
+</html>

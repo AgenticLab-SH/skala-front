@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome SKALA</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>환영 인사</h1>
+        <p class="required-line">스칼라에 오신 것을 환영합니다.</p>
+        <h2>안녕하세요, 김상훈입니다.</h2>
+        <p>전자공학을 전공하면서 반도체를 주로 공부하였습니다. 지금은 도메인을 활용한 AX 전문가가 되기 위하여 SKALA에서 웹과 AI를 배우고 있습니다.</p>
+        <p>HTML, CSS, JavaScript를 배우면서 찾아본 것들을 활용하여 조금씩 기능을 더했습니다.</p>
+      </div>
+      <figure class="hero-visual">
+        <img src="../media/semiconductor-chip.jpg" width="500" height="285" alt="금색 핀이 보이는 반도체 칩">
+        <figcaption>칩 완제품 사진</figcaption>
+      </figure>
+    </header>
+
+    <nav class="site-nav" aria-label="김상훈의 페이지 메뉴">
+      <h3>페이지 메뉴</h3>
+      <ul>
+        <li><a href="myProfile.html">내 소개</a></li>
+        <li><a href="myClass.html">이번 주 수업</a></li>
+        <li><a href="holiday.html">나의 휴일</a></li>
+        <li><a href="myTrip.html">나의 여행지</a></li>
+        <li><a href="signUp.html">회원가입</a></li>
+        <li><a href="mediaSources.html">자료 출처</a></li>
+      </ul>
+    </nav>
+
+    <div class="content-wrapper">
+      <main>
+        <h2>과제 내용</h2>
+        <p>프로필은 목록 태그로 작성했고, 시간표에는 이번 주 실제 과목을 넣었습니다. 여행지에서는 사진, 오디오, 비디오 태그를 사용했습니다.</p>
+        <h2>JavaScript 연습</h2>
+        <ul>
+          <li>업다운 게임, 성적 계산기, 가방 목록을 버튼으로 실행할 수 있습니다.</li>
+          <li>도시를 선택하면 현재 기온과 습도를 불러옵니다.</li>
+          <li>외부 미디어의 원본과 사용 조건을 따로 기록했습니다.</li>
+        </ul>
+      </main>
+
+      <aside>
+        <h2>현재 시각</h2>
+        <p id="current-time" aria-live="polite">시간을 확인하고 있습니다.</p>
+
+        <h2>실시간 날씨</h2>
+        <p>도시를 선택하면 좌표와 현재 기온·습도를 불러옵니다.</p>
+        <select id="city-select">
+          <option value="none">도시를 선택하세요</option>
+          <option value="37.56,126.97">대한민국 서울</option>
+          <option value="35.67,139.65">일본 도쿄</option>
+          <option value="48.85,2.35">프랑스 파리</option>
+        </select>
+        <div id="weather-box"><p>도시를 선택하면 날씨가 표시됩니다.</p></div>
+
+        <section class="game-area">
+          <h3>JavaScript 기능</h3>
+          <button class="btn-submit" type="button" onclick="startGame()">업다운 게임</button>
+          <button class="btn-submit" type="button" onclick="checkGrade()">성적 계산기</button>
+          <button class="btn-submit" type="button" onclick="showMyBag()">내 가방 보기</button>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <p>김상훈의 SKALA 프론트엔드 과제</p>
+    </footer>
+  </div>
+  <script src="../script/site.js"></script>
+  <script src="../script/upDown.js"></script>
+  <script src="../script/grade.js"></script>
+  <script src="../script/bag.js"></script>
+  <script type="module" src="../script/realtimeInfo.js"></script>
+</body>
+
+</html>
