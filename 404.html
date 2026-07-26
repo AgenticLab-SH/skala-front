@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://skala-front.pages.dev/">
+  <title>SKALA Front로 이동</title>
+</head>
+<body>
+  <p><a href="https://skala-front.pages.dev/">SKALA Front로 이동</a></p>
+  <script>
+    const base = "/skala-front";
+    const path = location.pathname.startsWith(base)
+      ? location.pathname.slice(base.length) || "/"
+      : "/";
+    location.replace(`https://skala-front.pages.dev${path}${location.search}${location.hash}`);
+  </script>
+</body>
+</html>
